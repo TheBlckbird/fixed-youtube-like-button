@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+:root {
+    --very-light-gray: #fefefe;
+    --light-gray: #f7f7f7;
+    --hover-gray: #e3e3e3;
+    --dark-gray: #cccccc;
+
+    --divider-gray: #bbbbbb;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+        background-color: var(--light-gray);
+        cursor: default;
+        user-select: none;
+        padding: 4px 8px;
+
+        display: flex;
+        align-items: center;
+
+        transition: background-color 0.1s ease;
+    }
+
+    .button:hover {
+        background-color: var(--hover-gray);
+        z-index: 99;
+    }
+
+    .button:active {
+        background-color: var(--dark-gray);
+    }
+
+    .like {
+        border-radius: 1000px 0 0 1000px;
+        gap: 4px;
+        position: relative;
+        left: 1px;
+    }
+
+    .dislike {
+        border-radius: 0 1000px 1000px 0;
+        padding-top: 5px;
+        padding-bottom: 3px;
+
+        position: relative;
+        right: 1px;
+    }
+
+    .divider {
+        width: 1px;
+        height: 20px;
+        position: relative;
+        background-color: var(--divider-gray);
+
+        z-index: 100;
+    }
+}
