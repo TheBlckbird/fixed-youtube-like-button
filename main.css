@@ -34,7 +34,7 @@ body {
 
     .button {
         background-color: var(--light-gray);
-        cursor: default;
+        cursor: pointer;
         user-select: none;
         padding: 4px 8px;
 
